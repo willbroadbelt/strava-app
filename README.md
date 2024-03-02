@@ -22,7 +22,9 @@ Make a copy of `config.example.properties` to `config.properties` with the appli
 
 ## Run
 Run Server via an IDE or run the Jar directly once built:
-> java -jar target/StravaApp-1.0-SNAPSHOT-jar-with-dependencies.jar 
+```shell
+java -jar target/StravaApp-1.0-SNAPSHOT-jar-with-dependencies.jar 
+```
 
 ## Deploy
 Ensure the Jar has been built, and configs set. Then can run

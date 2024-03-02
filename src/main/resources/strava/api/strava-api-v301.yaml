@@ -1,15 +1,15 @@
 openapi: 3.0.1
 info:
   title: Strava API v3
-  description: The [Swagger Playground](https://developers.com.willbroadbelt.strava.com/playground)
+  description: The [Swagger Playground](https://developers.strava.com/playground)
     is the easiest way to familiarize yourself with the Strava API by submitting HTTP
     requests and observing the responses before you write any client code. It will
     show what a response will look like with different endpoints depending on the
     authorization scope you receive from your athletes. To use the Playground, go
-    to https://www.com.willbroadbelt.strava.com/settings/api and change your “Authorization Callback
-    Domain” to developers.com.willbroadbelt.strava.com. Please note, we only support Swagger 2.0. There
+    to https://www.strava.com/settings/api and change your “Authorization Callback
+    Domain” to developers.strava.com. Please note, we only support Swagger 2.0. There
     is a known issue where you can only select one scope at a time. For more information,
-    please check the section “client code” at https://developers.com.willbroadbelt.strava.com/docs.
+    please check the section “client code” at https://developers.strava.com/docs.
   version: 3.0.0
 servers:
   - url: https://www.strava.com/api/v3
@@ -972,7 +972,7 @@ paths:
                   use_primary_photo: true
                   count: 2
                 highlighted_kudosers:
-                  - destination_url: com.willbroadbelt.strava://athletes/12345678987654321
+                  - destination_url: strava://athletes/12345678987654321
                     display_name: Marianne V.
                     avatar_url: https://dgalywyr863hv.cloudfront.net/pictures/athletes/12345678987654321/12345678987654321/3/medium.jpg
                     show_name: true
@@ -1171,7 +1171,7 @@ paths:
                   use_primary_photo: true
                   count: 2
                 highlighted_kudosers:
-                  - destination_url: com.willbroadbelt.strava://athletes/12345678987654321
+                  - destination_url: strava://athletes/12345678987654321
                     display_name: Marianne V.
                     avatar_url: https://dgalywyr863hv.cloudfront.net/pictures/athletes/12345678987654321/12345678987654321/3/medium.jpg
                     show_name: true
@@ -1565,7 +1565,7 @@ paths:
                 member_count: 116
                 featured: false
                 verified: false
-                url: team-com.willbroadbelt.strava-bike
+                url: team-strava-bike
                 membership: member
                 admin: false
                 owner: false
@@ -1775,7 +1775,7 @@ paths:
                   member_count: 93151
                   featured: false
                   verified: true
-                  url: com.willbroadbelt.strava
+                  url: strava
         default:
           description: Unexpected error.
           content:
@@ -3378,7 +3378,7 @@ components:
               description: The gear's brand name.
             model_name:
               type: string
-              description: The gear's com.willbroadbelt.model name.
+              description: The gear's model name.
             frame_type:
               type: integer
               description: The gear's frame type (bike only).
