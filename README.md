@@ -5,14 +5,16 @@ activities as we are notified about them.
 
 ## Build
 ### Strava OpenAPI Code-gen
-
-> mvn clean compile
-
+```shell
+mvn clean compile
+```
 N.B. Strava have only published a [swagger 2.0 spec](https://developers.strava.com/swagger/swagger.json) which I have converted to an [OpenAPI 3.0.1 spec](src/main/resources/strava/api/strava-api-v301.yaml).
 
 
 ### Package into fat Jar
-> mvn clean package
+```shell
+mvn clean package
+```
 
 
 ## Configure
@@ -24,8 +26,10 @@ Run Server via an IDE or run the Jar directly once built:
 
 ## Deploy
 Ensure the Jar has been built, and configs set. Then can run
-> cd terraform \
-> terraform init \
-> terraform apply
+```shell
+cd terraform
+terraform init
+terraform apply
+```
 
 May need to run `terraform destroy` to redeploy changes if only code changes are made and no infra changes.
